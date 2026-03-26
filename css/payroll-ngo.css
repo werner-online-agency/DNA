@@ -1,0 +1,722 @@
+/* DNA Outsourcing - NGO Payroll Page Styles */
+
+/* Hero Section */
+.ngo-hero {
+    background: linear-gradient(135deg, rgba(0, 23, 55, 0.92) 0%, rgba(0, 51, 102, 0.88) 100%),
+                url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1920&q=80') center/cover no-repeat;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 140px 0 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ngo-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='m36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm-6 6c0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6 6-2.686 6-6zm0 24c0-3.314-2.686-6-6-6s-6 2.686-6 6 2.686 6 6 6 6-2.686 6-6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    z-index: 1;
+}
+
+.ngo-hero > .container {
+    position: relative;
+    z-index: 2;
+}
+
+.ngo-hero .hero-badge {
+    background: rgba(14, 156, 126, 0.3);
+    border: 1px solid rgba(14, 156, 126, 0.5);
+}
+
+.ngo-hero .hero-title {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.ngo-hero .hero-tagline {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.ngo-hero .hero-image-wrapper {
+    position: relative;
+}
+
+.ngo-hero .hero-main-image {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+}
+
+.ngo-hero .hero-floating-card {
+    position: absolute;
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ngo-hero .floating-card-1 {
+    bottom: 30px;
+    left: -30px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.ngo-hero .floating-card-2 {
+    top: 30px;
+    right: -20px;
+    animation: float 3s ease-in-out infinite 1s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.floating-card-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #0E9C7E 0%, #098565 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-card-icon i {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.floating-card-text h5 {
+    font-size: 0.9rem;
+    color: #001737;
+    font-weight: 600;
+    margin: 0;
+}
+
+.floating-card-text span {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Mission Statement */
+.mission-section {
+    padding: 120px 0;
+    background: #fff;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission-icon {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, rgba(14, 156, 126, 0.1) 0%, rgba(14, 156, 126, 0.2) 100%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+}
+
+.mission-icon i {
+    font-size: 2.5rem;
+    color: #0E9C7E;
+}
+
+.mission-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #001737;
+    margin-bottom: 25px;
+}
+
+.mission-content .lead {
+    font-size: 1.25rem;
+    color: #555;
+    line-height: 1.9;
+}
+
+.mission-content .highlight-box {
+    background: linear-gradient(135deg, #0E9C7E 0%, #098565 100%);
+    color: #fff;
+    padding: 30px 40px;
+    border-radius: 20px;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Challenge Section */
+.challenge-section {
+    padding: 120px 0;
+    background: linear-gradient(180deg, #f8fafc 0%, #fff 100%);
+}
+
+.challenge-image-col {
+    position: relative;
+}
+
+.challenge-main-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.15);
+}
+
+.challenge-stats-card {
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-left: 5px solid #dc3545;
+}
+
+.challenge-stats-card .stat-number {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #dc3545;
+}
+
+.challenge-stats-card .stat-label {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.challenge-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #001737;
+    margin-bottom: 25px;
+}
+
+.challenge-content .lead-text {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Fraud Cards */
+.fraud-types-grid {
+    margin-top: 30px;
+}
+
+.fraud-type-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #dc3545;
+    transition: all 0.3s ease;
+}
+
+.fraud-type-card:hover {
+    transform: translateX(10px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+.fraud-type-icon {
+    width: 55px;
+    height: 55px;
+    background: rgba(220, 53, 69, 0.1);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.fraud-type-icon i {
+    font-size: 1.3rem;
+    color: #dc3545;
+}
+
+.fraud-type-content h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #001737;
+    margin-bottom: 8px;
+}
+
+.fraud-type-content p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Solution Section */
+.solution-section {
+    padding: 120px 0;
+    background: linear-gradient(135deg, #001737 0%, #003366 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.solution-section::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(14, 156, 126, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.solution-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.solution-header .section-badge {
+    background: rgba(14, 156, 126, 0.3);
+    border: 1px solid rgba(14, 156, 126, 0.5);
+}
+
+.solution-header .section-title {
+    color: #fff;
+}
+
+.solution-header .section-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Focus Cards Grid */
+.focus-cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.focus-card-new {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.focus-card-new::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0E9C7E 0%, #00d4aa 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.focus-card-new:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.focus-card-new:hover::before {
+    opacity: 1;
+}
+
+.focus-icon-new {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #0E9C7E 0%, #098565 100%);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    box-shadow: 0 15px 40px rgba(14, 156, 126, 0.4);
+    transition: all 0.3s ease;
+}
+
+.focus-card-new:hover .focus-icon-new {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.focus-icon-new i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.focus-card-new h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.focus-card-new p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Image Gallery Section */
+.gallery-section {
+    padding: 120px 0;
+    background: #fff;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 23, 55, 0.7) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+}
+
+.gallery-item.large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery-item.tall {
+    grid-row: span 2;
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-caption h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.gallery-caption p {
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Trust Section */
+.trust-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e8f4f0 100%);
+}
+
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.trust-badge {
+    text-align: center;
+}
+
+.trust-badge-icon {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.trust-badge-icon i {
+    font-size: 2rem;
+    color: #0E9C7E;
+}
+
+.trust-badge h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #001737;
+    margin-bottom: 5px;
+}
+
+.trust-badge p {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 0;
+}
+
+/* CTA Contact Section */
+.ngo-contact-section {
+    padding: 120px 0;
+    background: linear-gradient(135deg, rgba(14, 156, 126, 0.95) 0%, rgba(9, 133, 101, 0.95) 100%),
+                url('https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1920&q=80') center/cover no-repeat;
+    position: relative;
+}
+
+.contact-content {
+    color: #fff;
+}
+
+.contact-content h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 35px;
+    max-width: 500px;
+}
+
+.contact-info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateX(10px);
+}
+
+.contact-info-card i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.contact-info-card span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.ngo-contact-form {
+    background: #fff;
+    border-radius: 30px;
+    padding: 45px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+}
+
+.ngo-contact-form h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #001737;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.ngo-contact-form .form-control {
+    border: 2px solid #e8e8e8;
+    border-radius: 15px;
+    padding: 16px 20px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.ngo-contact-form .form-control:focus {
+    border-color: #0E9C7E;
+    box-shadow: 0 0 0 4px rgba(14, 156, 126, 0.1);
+}
+
+.ngo-contact-form textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+.ngo-contact-form .btn-submit {
+    background: linear-gradient(135deg, #0E9C7E 0%, #098565 100%);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ngo-contact-form .btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(14, 156, 126, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 1199px) {
+    .focus-cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 200px);
+    }
+    
+    .gallery-item.large {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    
+    .gallery-item.tall {
+        grid-row: span 1;
+    }
+}
+
+@media (max-width: 991px) {
+    .ngo-hero .hero-title {
+        font-size: 3rem;
+    }
+    
+    .ngo-hero .hero-tagline {
+        font-size: 1.4rem;
+    }
+    
+    .challenge-stats-card {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 20px;
+    }
+    
+    .ngo-contact-form {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ngo-hero {
+        min-height: auto;
+        padding: 120px 0 80px;
+    }
+    
+    .ngo-hero .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .ngo-hero .hero-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .focus-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+    }
+    
+    .gallery-item.large,
+    .gallery-item.tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .trust-badges {
+        gap: 30px;
+    }
+    
+    .ngo-contact-form {
+        padding: 30px;
+    }
+    
+    .contact-content h2 {
+        font-size: 2rem;
+    }
+}

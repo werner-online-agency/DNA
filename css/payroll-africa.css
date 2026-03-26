@@ -1,0 +1,552 @@
+/* PAYROLL AFRICA PAGE STYLES */
+
+.africa-hero {
+    background: linear-gradient(135deg, #001737 0%, #002855 100%);
+    padding: 140px 0 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(14, 156, 126, 0.15) 0%, transparent 60%);
+}
+
+.min-vh-65 { min-height: 65vh; }
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(14, 156, 126, 0.15);
+    color: #0E9C7E;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(14, 156, 126, 0.3);
+}
+
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-title .highlight {
+    background: linear-gradient(135deg, #0E9C7E 0%, #12c99b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-num {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0E9C7E;
+}
+
+.stat-text {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primary-glow {
+    background: linear-gradient(135deg, #0E9C7E 0%, #0a7d65 100%);
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(14, 156, 126, 0.4);
+}
+
+.btn-primary-glow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(14, 156, 126, 0.5);
+    color: #fff;
+}
+
+.btn-outline-light-glow {
+    background: transparent;
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light-glow:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    color: #fff;
+}
+
+/* Africa Map Visual */
+.africa-map-visual {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.africa-map-visual > i {
+    font-size: 18rem;
+    color: rgba(14, 156, 126, 0.3);
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.map-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(14, 156, 126, 0.3) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% { opacity: 0.5; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.05); }
+}
+
+.map-markers .marker {
+    position: absolute;
+    color: #0E9C7E;
+    font-size: 1.5rem;
+    animation: bounce 2s infinite;
+}
+
+.m1 { top: 20%; left: 40%; animation-delay: 0s; }
+.m2 { top: 35%; right: 30%; animation-delay: 0.3s; }
+.m3 { top: 55%; left: 35%; animation-delay: 0.6s; }
+.m4 { bottom: 25%; right: 35%; animation-delay: 0.9s; }
+.m5 { bottom: 35%; left: 45%; animation-delay: 1.2s; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+}
+
+.hero-wave svg { width: 100%; height: 100%; }
+.hero-wave path { fill: #fff; }
+
+/* Track Record Section */
+.track-record {
+    background: #fff;
+    padding: 100px 0;
+}
+
+.section-badge {
+    display: inline-block;
+    background: rgba(14, 156, 126, 0.1);
+    color: #0E9C7E;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.section-badge.light {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #001737;
+    margin-bottom: 15px;
+}
+
+.record-card {
+    background: #f8f9fa;
+    border-radius: 20px;
+    padding: 35px;
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.record-card:hover {
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border-color: rgba(14, 156, 126, 0.2);
+    transform: translateY(-5px);
+}
+
+.record-card.wide { padding: 40px; }
+
+.record-num {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgba(14, 156, 126, 0.1);
+}
+
+.record-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #0E9C7E 0%, #0a7d65 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.record-icon i { font-size: 1.5rem; color: #fff; }
+
+.record-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #001737;
+    margin-bottom: 15px;
+}
+
+.record-card p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Countries Section */
+.countries-section {
+    background: linear-gradient(135deg, #001737 0%, #002855 100%);
+    padding: 100px 0;
+    overflow: visible;
+    position: relative;
+}
+
+.countries-section::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(14, 156, 126, 0.15) 0%, rgba(14, 156, 126, 0.05) 40%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.globe-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 50px;
+    overflow: visible;
+}
+
+.globe-ring {
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    border: 1px solid rgba(14, 156, 126, 0.15);
+    animation: globe-pulse 4s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.globe-ring-outer {
+    width: 520px;
+    height: 520px;
+    border-color: rgba(14, 156, 126, 0.08);
+    animation-delay: 1s;
+}
+
+@keyframes globe-pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.04); opacity: 0.5; }
+}
+
+#globe-canvas {
+    display: block;
+    width: 450px;
+    height: 450px;
+    cursor: grab;
+    position: relative;
+    z-index: 2;
+}
+
+.globe-tooltip {
+    position: absolute;
+    background: rgba(14, 156, 126, 0.95);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateX(-50%);
+    z-index: 10;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.globe-tooltip i {
+    margin-right: 5px;
+    font-size: 11px;
+}
+
+.globe-tooltip-active {
+    background: linear-gradient(135deg, #0E9C7E, #00d4aa);
+    padding: 8px 18px;
+    font-size: 14px;
+    box-shadow: 0 6px 25px rgba(14, 156, 126, 0.5);
+    transform: translateX(-50%) scale(1.05);
+}
+
+.globe-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+.globe-label i {
+    font-size: 10px;
+    animation: globe-hint 2s ease-in-out infinite;
+}
+
+@keyframes globe-hint {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(4px); }
+}
+
+.text-white-70 { color: rgba(255, 255, 255, 0.7) !important; }
+.section-subtitle { font-size: 1.1rem; }
+
+.countries-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.region-block {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.region-block:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(14, 156, 126, 0.3);
+}
+
+.region-block.highlight {
+    background: rgba(14, 156, 126, 0.15);
+    border-color: rgba(14, 156, 126, 0.4);
+}
+
+.region-block h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0E9C7E;
+    margin-bottom: 15px;
+}
+
+.region-block h4 i { margin-right: 8px; }
+
+.country-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.country-tags span {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.country-tags span:hover {
+    background: rgba(14, 156, 126, 0.3);
+}
+
+.country-tags span.uae, .country-tags span.ksa {
+    background: linear-gradient(135deg, #0E9C7E 0%, #0a7d65 100%);
+    color: #fff;
+    font-weight: 600;
+}
+
+/* CTA Section */
+.africa-cta {
+    background: linear-gradient(135deg, #0E9C7E 0%, #0a7d65 100%);
+    padding: 100px 0;
+}
+
+.africa-cta h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.africa-cta p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 25px;
+}
+
+.cta-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.contact-link:hover { color: #001737; transform: translateX(5px); }
+.contact-link i { width: 20px; }
+
+.cta-form {
+    background: #fff;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+.cta-form h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #001737;
+    margin-bottom: 25px;
+}
+
+.cta-form .form-control {
+    background: #f8f9fa;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.cta-form .form-control:focus {
+    background: #fff;
+    border-color: #0E9C7E;
+    box-shadow: 0 0 0 4px rgba(14, 156, 126, 0.1);
+}
+
+.btn-submit {
+    width: 100%;
+    background: linear-gradient(135deg, #0E9C7E 0%, #0a7d65 100%);
+    color: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(14, 156, 126, 0.3);
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .hero-title { font-size: 2.5rem; }
+    .hero-stats { flex-wrap: wrap; }
+    .countries-grid { grid-template-columns: repeat(2, 1fr); }
+    .africa-map-visual { display: none; }
+    #globe-canvas { width: 380px; height: 380px; }
+    .globe-ring { width: 410px; height: 410px; }
+    .globe-ring-outer { width: 450px; height: 450px; }
+    .countries-section::before { width: 400px; height: 400px; }
+}
+
+@media (max-width: 767px) {
+    .hero-title { font-size: 2rem; }
+    .hero-buttons { flex-direction: column; }
+    .countries-grid { grid-template-columns: 1fr; }
+    .africa-cta h2 { font-size: 1.8rem; }
+    .cta-form { margin-top: 40px; }
+    #globe-canvas { width: 300px; height: 300px; }
+    .globe-ring { width: 330px; height: 330px; }
+    .globe-ring-outer { width: 360px; height: 360px; }
+    .countries-section::before { width: 350px; height: 350px; }
+    .africa-hero { padding: 120px 0 80px; }
+}
